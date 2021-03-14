@@ -1,0 +1,17 @@
+{% extends "./base.html" %}
+{% block title %}HOME{% endblock %}
+{% block pageTitle %}HOME{% endblock %}
+{% block content %}
+<div class="display">
+    {% for product in products %}
+    <div class="card">
+        <img src="{{ product.image.url }}">
+        <h2>{{ product.title }}</h2><br>
+        <h5>By:</h5>
+        <h4>{{ product.author }}</h4><br>
+        <h3>{{ product.price }}</h3><br>
+        <button>BUY</button>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

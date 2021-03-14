@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>{% block title %}SHOP{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <h1>{% block pageTitle %}SHOP{% endblock %}</h1>
+    </header>
+    <div class="nav">
+        <a href="">LINK</a>
+        <a href="">LINK</a>
+        <a href="">LINK</a>
+        <a href="">LINK</a>
+        <a href="">LINK</a>
+        <a href="">LINK</a>
+        <a href="">LINK</a>
+        <a href="">LINK</a>
+    </div>
+    <main>
+        <aside>
+            <h2>Aside Left</h2>
+        </aside>
+        <section>
+            {% block content %}
+            {% endblock %}
+        </section>
+        <aside>
+            <h2>Aside Right</h2>
+        </aside>
+    </main>
+    <footer>
+        <span>Copyright</span>
+    </footer>
+</body>
+
+</html>
